@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 
 @Component({
     selector: 'sb-register',
@@ -7,6 +7,9 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
     styleUrls: ['register.component.scss'],
 })
 export class RegisterComponent implements OnInit {
-    constructor() {}
-    ngOnInit() {}
+    constructor() {
+    }
+
+    ngOnInit() {
+    }
 }

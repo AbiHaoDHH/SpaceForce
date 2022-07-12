@@ -1,12 +1,5 @@
-import {
-    AfterViewInit,
-    ChangeDetectionStrategy,
-    Component,
-    ElementRef,
-    OnInit,
-    ViewChild,
-} from '@angular/core';
-import { Chart } from 'chart.js';
+import {AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, OnInit, ViewChild,} from '@angular/core';
+import {Chart} from 'chart.js';
 
 @Component({
     selector: 'sb-charts-area',
@@ -18,8 +11,11 @@ export class ChartsAreaComponent implements OnInit, AfterViewInit {
     @ViewChild('myAreaChart') myAreaChart!: ElementRef<HTMLCanvasElement>;
     chart!: Chart;
 
-    constructor() {}
-    ngOnInit() {}
+    constructor() {
+    }
+
+    ngOnInit() {
+    }
 
     ngAfterViewInit() {
         this.chart = new Chart(this.myAreaChart.nativeElement, {

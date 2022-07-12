@@ -1,10 +1,10 @@
-import { ChangeDetectorRef, Component, DebugElement, NO_ERRORS_SCHEMA } from '@angular/core';
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { NavigationService } from '@modules/navigation/services';
-import { NavigationServiceStub } from '@testing/stubs';
+import {ChangeDetectorRef, Component, DebugElement, NO_ERRORS_SCHEMA} from '@angular/core';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import {NavigationService} from '@modules/navigation/services';
+import {NavigationServiceStub} from '@testing/stubs';
 
-import { LayoutDashboardComponent } from './layout-dashboard.component';
+import {LayoutDashboardComponent} from './layout-dashboard.component';
 
 @Component({
     template: `
@@ -36,7 +36,7 @@ describe('LayoutDashboardComponent', () => {
             declarations: [TestHostComponent, LayoutDashboardComponent],
             imports: [NoopAnimationsModule],
             providers: [
-                { provide: NavigationService, useValue: NavigationServiceStub },
+                {provide: NavigationService, useValue: NavigationServiceStub},
                 ChangeDetectorRef,
             ],
             schemas: [NO_ERRORS_SCHEMA],

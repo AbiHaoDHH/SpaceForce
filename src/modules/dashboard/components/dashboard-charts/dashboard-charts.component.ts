@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 
 @Component({
     selector: 'sb-dashboard-charts',
@@ -7,6 +7,9 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
     styleUrls: ['dashboard-charts.component.scss'],
 })
 export class DashboardChartsComponent implements OnInit {
-    constructor() {}
-    ngOnInit() {}
+    constructor() {
+    }
+
+    ngOnInit() {
+    }
 }

@@ -1,9 +1,9 @@
-import { DecimalPipe } from '@angular/common';
-import { Component, DebugElement, NO_ERRORS_SCHEMA } from '@angular/core';
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import {DecimalPipe} from '@angular/common';
+import {Component, DebugElement, NO_ERRORS_SCHEMA} from '@angular/core';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 
-import { NgBootstrapTableComponent } from './ng-bootstrap-table.component';
+import {NgBootstrapTableComponent} from './ng-bootstrap-table.component';
 
 @Component({
     template: `

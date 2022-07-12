@@ -1,10 +1,10 @@
 /* tslint:disable: ordered-imports*/
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import {CommonModule} from '@angular/common';
+import {NgModule} from '@angular/core';
+import {RouterModule} from '@angular/router';
 
 /* Modules */
-import { AppCommonModule } from '@common/app-common.module';
+import {AppCommonModule} from '@common/app-common.module';
 
 /* Components */
 import * as navigationComponents from './components';
@@ -12,11 +12,11 @@ import * as navigationComponents from './components';
 /* Containers */
 import * as navigationContainers from './containers';
 
-/* Layouts */
-import * as appCommonLayouts from './layouts';
-
 /* Guards */
 import * as navigationGuards from './guards';
+
+/* Layouts */
+import * as appCommonLayouts from './layouts';
 
 /* Services */
 import * as navigationServices from './services';
@@ -35,4 +35,5 @@ import * as navigationServices from './services';
         ...appCommonLayouts.layouts,
     ],
 })
-export class NavigationModule {}
+export class NavigationModule {
+}

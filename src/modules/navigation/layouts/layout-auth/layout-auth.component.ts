@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 
 @Component({
     selector: 'sb-layout-auth',
@@ -7,6 +7,9 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
     styleUrls: ['layout-auth.component.scss'],
 })
 export class LayoutAuthComponent implements OnInit {
-    constructor() {}
-    ngOnInit() {}
+    constructor() {
+    }
+
+    ngOnInit() {
+    }
 }

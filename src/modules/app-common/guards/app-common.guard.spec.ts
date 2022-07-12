@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { AppCommonGuard } from './app-common.guard';
+import {AppCommonGuard} from './app-common.guard';
 
 describe('App Common Guards', () => {
     let appCommonGuard: AppCommonGuard;

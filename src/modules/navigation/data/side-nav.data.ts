@@ -1,4 +1,4 @@
-import { SideNavItems, SideNavSection } from '@modules/navigation/models';
+import {SideNavItems, SideNavSection} from '@modules/navigation/models';
 
 export const sideNavSections: SideNavSection[] = [
     {

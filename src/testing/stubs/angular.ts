@@ -1,7 +1,7 @@
 // https://angular.io/guide/testing#activatedroutestub
 
-import { convertToParamMap, ParamMap, Params } from '@angular/router';
-import { BehaviorSubject, ReplaySubject } from 'rxjs';
+import {convertToParamMap, ParamMap, Params} from '@angular/router';
+import {BehaviorSubject, ReplaySubject} from 'rxjs';
 
 /**
  * An ActivateRoute test double with a `paramMap` observable.

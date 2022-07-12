@@ -1,4 +1,4 @@
-import { AppCommonService } from './app-common.service';
+import {AppCommonService} from './app-common.service';
 
 export const services = [AppCommonService];
 

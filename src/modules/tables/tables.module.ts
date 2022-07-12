@@ -1,12 +1,12 @@
 /* tslint:disable: ordered-imports*/
-import { NgModule } from '@angular/core';
-import { CommonModule, DecimalPipe } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import {CommonModule, DecimalPipe} from '@angular/common';
+import {NgModule} from '@angular/core';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {RouterModule} from '@angular/router';
 
 /* Modules */
-import { AppCommonModule } from '@common/app-common.module';
-import { NavigationModule } from '@modules/navigation/navigation.module';
+import {AppCommonModule} from '@common/app-common.module';
+import {NavigationModule} from '@modules/navigation/navigation.module';
 
 /* Components */
 import * as tablesComponents from './components';
@@ -45,4 +45,5 @@ import * as tablesServices from './services';
     ],
     exports: [...tablesContainers.containers, ...tablesComponents.components],
 })
-export class TablesModule {}
+export class TablesModule {
+}

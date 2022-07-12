@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { DashboardGuard } from './dashboard.guard';
+import {DashboardGuard} from './dashboard.guard';
 
 describe('Dashboard Guards', () => {
     let dashboardGuard: DashboardGuard;

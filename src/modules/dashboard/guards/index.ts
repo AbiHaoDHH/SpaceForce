@@ -1,4 +1,4 @@
-import { DashboardGuard } from './dashboard.guard';
+import {DashboardGuard} from './dashboard.guard';
 
 export const guards = [DashboardGuard];
 

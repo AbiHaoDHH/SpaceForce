@@ -1,12 +1,12 @@
 /* tslint:disable: ordered-imports*/
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import {CommonModule} from '@angular/common';
+import {NgModule} from '@angular/core';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {RouterModule} from '@angular/router';
 
 /* Modules */
-import { AppCommonModule } from '@common/app-common.module';
-import { NavigationModule } from '@modules/navigation/navigation.module';
+import {AppCommonModule} from '@common/app-common.module';
+import {NavigationModule} from '@modules/navigation/navigation.module';
 
 /* Components */
 import * as chartsComponents from './components';
@@ -33,4 +33,5 @@ import * as chartsServices from './services';
     declarations: [...chartsContainers.containers, ...chartsComponents.components],
     exports: [...chartsContainers.containers, ...chartsComponents.components],
 })
-export class ChartsModule {}
+export class ChartsModule {
+}

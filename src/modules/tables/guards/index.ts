@@ -1,4 +1,4 @@
-import { TablesGuard } from './tables.guard';
+import {TablesGuard} from './tables.guard';
 
 export const guards = [TablesGuard];
 

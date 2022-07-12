@@ -1,9 +1,9 @@
-import { HttpClient } from '@angular/common/http';
-import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
-import { TestBed } from '@angular/core/testing';
-import { take } from 'rxjs/operators';
+import {HttpClient} from '@angular/common/http';
+import {HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
+import {TestBed} from '@angular/core/testing';
+import {take} from 'rxjs/operators';
 
-import { UtilityService } from './utility.service';
+import {UtilityService} from './utility.service';
 
 describe('UtilityService', () => {
     let utilityService: UtilityService;

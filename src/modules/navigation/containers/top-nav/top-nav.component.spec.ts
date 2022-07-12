@@ -1,10 +1,10 @@
-import { Component, DebugElement, NO_ERRORS_SCHEMA } from '@angular/core';
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { NavigationService } from '@modules/navigation/services';
-import { NavigationServiceStub } from '@testing/stubs';
+import {Component, DebugElement, NO_ERRORS_SCHEMA} from '@angular/core';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import {NavigationService} from '@modules/navigation/services';
+import {NavigationServiceStub} from '@testing/stubs';
 
-import { TopNavComponent } from './top-nav.component';
+import {TopNavComponent} from './top-nav.component';
 
 @Component({
     template: `
@@ -32,7 +32,7 @@ describe('TopNavComponent', () => {
         TestBed.configureTestingModule({
             declarations: [TestHostComponent, TopNavComponent],
             imports: [NoopAnimationsModule],
-            providers: [{ provide: NavigationService, useValue: NavigationServiceStub }],
+            providers: [{provide: NavigationService, useValue: NavigationServiceStub}],
             schemas: [NO_ERRORS_SCHEMA],
         }).compileComponents();
 

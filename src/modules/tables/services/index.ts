@@ -1,5 +1,5 @@
-import { CountryService } from './country.service';
-import { TablesService } from './tables.service';
+import {CountryService} from './country.service';
+import {TablesService} from './tables.service';
 
 export const services = [TablesService, CountryService];
 

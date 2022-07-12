@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { SideNavService } from './side-nav.service';
+import {SideNavService} from './side-nav.service';
 
 describe('SideNavService', () => {
     let sideNavService: SideNavService;

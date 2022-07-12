@@ -1,4 +1,4 @@
-import { VersionComponent } from './version/version.component';
+import {VersionComponent} from './version/version.component';
 
 export const containers = [
     VersionComponent,

@@ -1,4 +1,4 @@
-import { AppCommonGuard } from './app-common.guard';
+import {AppCommonGuard} from './app-common.guard';
 
 export const guards = [AppCommonGuard];
 

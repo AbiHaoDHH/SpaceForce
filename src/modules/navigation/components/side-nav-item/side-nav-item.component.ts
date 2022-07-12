@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
-import { SBRouteData, SideNavItem } from '@modules/navigation/models';
+import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
+import {SBRouteData, SideNavItem} from '@modules/navigation/models';
 
 @Component({
     selector: 'sb-side-nav-item',
@@ -14,6 +14,9 @@ export class SideNavItemComponent implements OnInit {
     expanded = false;
     routeData!: SBRouteData;
 
-    constructor() {}
-    ngOnInit() {}
+    constructor() {
+    }
+
+    ngOnInit() {
+    }
 }

@@ -1,4 +1,4 @@
-import { ErrorService } from './error.service';
+import {ErrorService} from './error.service';
 
 export const services = [ErrorService];
 

@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { TablesGuard } from './tables.guard';
+import {TablesGuard} from './tables.guard';
 
 describe('Tables Guards', () => {
     let tablesGuard: TablesGuard;

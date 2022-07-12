@@ -1,9 +1,9 @@
-import { Injectable } from '@angular/core';
-import { ActivatedRoute, ChildActivationEnd, Router } from '@angular/router';
-import { BehaviorSubject, Observable } from 'rxjs';
-import { filter } from 'rxjs/operators';
+import {Injectable} from '@angular/core';
+import {ActivatedRoute, ChildActivationEnd, Router} from '@angular/router';
+import {BehaviorSubject, Observable} from 'rxjs';
+import {filter} from 'rxjs/operators';
 
-import { SBRouteData } from '../models';
+import {SBRouteData} from '../models';
 
 @Injectable()
 export class NavigationService {

@@ -1,10 +1,10 @@
-import { DecimalPipe } from '@angular/common';
-import { Injectable, PipeTransform } from '@angular/core';
-import { COUNTRIES } from '@modules/tables/data/countries';
-import { SortDirection } from '@modules/tables/directives';
-import { Country } from '@modules/tables/models';
-import { BehaviorSubject, Observable, of, Subject } from 'rxjs';
-import { debounceTime, delay, switchMap, tap } from 'rxjs/operators';
+import {DecimalPipe} from '@angular/common';
+import {Injectable, PipeTransform} from '@angular/core';
+import {COUNTRIES} from '@modules/tables/data/countries';
+import {SortDirection} from '@modules/tables/directives';
+import {Country} from '@modules/tables/models';
+import {BehaviorSubject, Observable, of, Subject} from 'rxjs';
+import {debounceTime, delay, switchMap, tap} from 'rxjs/operators';
 
 interface SearchResult {
     countries: Country[];
@@ -42,7 +42,7 @@ function matches(country: Country, term: string, pipe: PipeTransform) {
     );
 }
 
-@Injectable({ providedIn: 'root' })
+@Injectable({providedIn: 'root'})
 export class CountryService {
     private _loading$ = new BehaviorSubject<boolean>(true);
     private _search$ = new Subject<void>();
@@ -77,35 +77,45 @@ export class CountryService {
     get countries$() {
         return this._countries$.asObservable();
     }
+
     get total$() {
         return this._total$.asObservable();
     }
+
     get loading$() {
         return this._loading$.asObservable();
     }
+
     get page() {
         return this._state.page;
     }
+
     set page(page: number) {
-        this._set({ page });
+        this._set({page});
     }
+
     get pageSize() {
         return this._state.pageSize;
     }
+
     set pageSize(pageSize: number) {
-        this._set({ pageSize });
+        this._set({pageSize});
     }
+
     get searchTerm() {
         return this._state.searchTerm;
     }
+
     set searchTerm(searchTerm: string) {
-        this._set({ searchTerm });
+        this._set({searchTerm});
     }
+
     set sortColumn(sortColumn: string) {
-        this._set({ sortColumn });
+        this._set({sortColumn});
     }
+
     set sortDirection(sortDirection: SortDirection) {
-        this._set({ sortDirection });
+        this._set({sortDirection});
     }
 
     private _set(patch: Partial<State>) {
@@ -114,7 +124,7 @@ export class CountryService {
     }
 
     private _search(): Observable<SearchResult> {
-        const { sortColumn, sortDirection, pageSize, page, searchTerm } = this._state;
+        const {sortColumn, sortDirection, pageSize, page, searchTerm} = this._state;
 
         // 1. sort
         let countries = sort(COUNTRIES, sortColumn, sortDirection);
@@ -125,6 +135,6 @@ export class CountryService {
 
         // 3. paginate
         countries = countries.slice((page - 1) * pageSize, (page - 1) * pageSize + pageSize);
-        return of({ countries, total });
+        return of({countries, total});
     }
 }

@@ -1,4 +1,4 @@
-import { ChartsComponent } from './charts/charts.component';
+import {ChartsComponent} from './charts/charts.component';
 
 export const containers = [ChartsComponent];
 

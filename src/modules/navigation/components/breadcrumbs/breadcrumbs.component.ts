@@ -1,7 +1,7 @@
-import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from '@angular/core';
-import { Breadcrumb } from '@modules/navigation/models';
-import { NavigationService } from '@modules/navigation/services';
-import { Subscription } from 'rxjs';
+import {ChangeDetectionStrategy, Component, OnDestroy, OnInit} from '@angular/core';
+import {Breadcrumb} from '@modules/navigation/models';
+import {NavigationService} from '@modules/navigation/services';
+import {Subscription} from 'rxjs';
 
 @Component({
     selector: 'sb-breadcrumbs',
@@ -13,7 +13,9 @@ export class BreadcrumbsComponent implements OnInit, OnDestroy {
     subscription: Subscription = new Subscription();
     breadcrumbs!: Breadcrumb[];
 
-    constructor(public navigationService: NavigationService) {}
+    constructor(public navigationService: NavigationService) {
+    }
+
     ngOnInit() {
         this.subscription.add(
             this.navigationService.routeData$().subscribe(routeData => {

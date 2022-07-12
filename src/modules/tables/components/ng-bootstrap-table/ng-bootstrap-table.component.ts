@@ -1,16 +1,8 @@
-import {
-    ChangeDetectionStrategy,
-    ChangeDetectorRef,
-    Component,
-    Input,
-    OnInit,
-    QueryList,
-    ViewChildren,
-} from '@angular/core';
-import { SBSortableHeaderDirective, SortEvent } from '@modules/tables/directives';
-import { Country } from '@modules/tables/models';
-import { CountryService } from '@modules/tables/services';
-import { Observable } from 'rxjs';
+import {ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnInit, QueryList, ViewChildren,} from '@angular/core';
+import {SBSortableHeaderDirective, SortEvent} from '@modules/tables/directives';
+import {Country} from '@modules/tables/models';
+import {CountryService} from '@modules/tables/services';
+import {Observable} from 'rxjs';
 
 @Component({
     selector: 'sb-ng-bootstrap-table',
@@ -31,7 +23,8 @@ export class NgBootstrapTableComponent implements OnInit {
     constructor(
         public countryService: CountryService,
         private changeDetectorRef: ChangeDetectorRef
-    ) {}
+    ) {
+    }
 
     ngOnInit() {
         this.countryService.pageSize = this.pageSize;
@@ -39,7 +32,7 @@ export class NgBootstrapTableComponent implements OnInit {
         this.total$ = this.countryService.total$;
     }
 
-    onSort({ column, direction }: SortEvent) {
+    onSort({column, direction}: SortEvent) {
         this.sortedColumn = column;
         this.sortedDirection = direction;
         this.countryService.sortColumn = column;

@@ -1,9 +1,9 @@
-import { Component, DebugElement, NO_ERRORS_SCHEMA } from '@angular/core';
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { MockSideNavItem } from '@testing/mocks/navigation';
+import {Component, DebugElement, NO_ERRORS_SCHEMA} from '@angular/core';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import {MockSideNavItem} from '@testing/mocks/navigation';
 
-import { SideNavItemComponent } from './side-nav-item.component';
+import {SideNavItemComponent} from './side-nav-item.component';
 
 const mockSideNavItem = new MockSideNavItem();
 

@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { ErrorGuard } from './error.guard';
+import {ErrorGuard} from './error.guard';
 
 describe('Error Guards', () => {
     let errorGuard: ErrorGuard;

@@ -1,11 +1,11 @@
-import { Component, DebugElement, NO_ERRORS_SCHEMA } from '@angular/core';
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { UserService } from '@modules/auth/services';
-import { NavigationService } from '@modules/navigation/services';
-import { NavigationServiceStub, UserServiceStub } from '@testing/stubs';
+import {Component, DebugElement, NO_ERRORS_SCHEMA} from '@angular/core';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import {UserService} from '@modules/auth/services';
+import {NavigationService} from '@modules/navigation/services';
+import {NavigationServiceStub, UserServiceStub} from '@testing/stubs';
 
-import { SideNavComponent } from './side-nav.component';
+import {SideNavComponent} from './side-nav.component';
 
 @Component({
     template: `
@@ -35,8 +35,8 @@ describe('SideNavComponent', () => {
             declarations: [TestHostComponent, SideNavComponent],
             imports: [NoopAnimationsModule],
             providers: [
-                { provide: NavigationService, useValue: NavigationServiceStub },
-                { provide: UserService, useValue: UserServiceStub },
+                {provide: NavigationService, useValue: NavigationServiceStub},
+                {provide: UserService, useValue: UserServiceStub},
             ],
             schemas: [NO_ERRORS_SCHEMA],
         }).compileComponents();

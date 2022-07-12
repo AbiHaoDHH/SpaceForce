@@ -1,16 +1,15 @@
 /* tslint:disable: ordered-imports*/
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { SBRouteData } from '@modules/navigation/models';
-
-/* Module */
-import { DashboardModule } from './dashboard.module';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {SBRouteData} from '@modules/navigation/models';
 
 /* Containers */
 import * as dashboardContainers from './containers';
 
+/* Module */
+import {DashboardModule} from './dashboard.module';
+
 /* Guards */
-import * as dashboardGuards from './guards';
 
 /* Routes */
 export const ROUTES: Routes = [
@@ -70,4 +69,5 @@ export const ROUTES: Routes = [
     imports: [DashboardModule, RouterModule.forChild(ROUTES)],
     exports: [RouterModule],
 })
-export class DashboardRoutingModule {}
+export class DashboardRoutingModule {
+}

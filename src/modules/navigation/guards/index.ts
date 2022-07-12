@@ -1,4 +1,4 @@
-import { NavigationGuard } from './navigation.guard';
+import {NavigationGuard} from './navigation.guard';
 
 export const guards = [NavigationGuard];
 

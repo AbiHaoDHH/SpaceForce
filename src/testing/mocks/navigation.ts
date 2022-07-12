@@ -1,5 +1,6 @@
-import { SideNavItem } from '@modules/navigation/models';
-export { SideNavItem };
+import {SideNavItem} from '@modules/navigation/models';
+
+export {SideNavItem};
 
 export class MockSideNavItem implements SideNavItem {
     text = 'TEST';

@@ -1,4 +1,4 @@
-import { ChartsGuard } from './charts.guard';
+import {ChartsGuard} from './charts.guard';
 
 export const guards = [ChartsGuard];
 

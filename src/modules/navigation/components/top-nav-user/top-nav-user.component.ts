@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { UserService } from '@modules/auth/services';
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
+import {UserService} from '@modules/auth/services';
 
 @Component({
     selector: 'sb-top-nav-user',
@@ -8,6 +8,9 @@ import { UserService } from '@modules/auth/services';
     styleUrls: ['top-nav-user.component.scss'],
 })
 export class TopNavUserComponent implements OnInit {
-    constructor(public userService: UserService) {}
-    ngOnInit() {}
+    constructor(public userService: UserService) {
+    }
+
+    ngOnInit() {
+    }
 }

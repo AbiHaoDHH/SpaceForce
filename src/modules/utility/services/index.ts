@@ -1,4 +1,4 @@
-import { UtilityService } from './utility.service';
+import {UtilityService} from './utility.service';
 
 export const services = [
     UtilityService,

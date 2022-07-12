@@ -1,4 +1,4 @@
-import { TablesComponent } from './tables/tables.component';
+import {TablesComponent} from './tables/tables.component';
 
 export const containers = [TablesComponent];
 

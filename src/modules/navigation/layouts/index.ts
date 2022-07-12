@@ -1,6 +1,6 @@
-import { LayoutAuthComponent } from './layout-auth/layout-auth.component';
-import { LayoutDashboardComponent } from './layout-dashboard/layout-dashboard.component';
-import { LayoutErrorComponent } from './layout-error/layout-error.component';
+import {LayoutAuthComponent} from './layout-auth/layout-auth.component';
+import {LayoutDashboardComponent} from './layout-dashboard/layout-dashboard.component';
+import {LayoutErrorComponent} from './layout-error/layout-error.component';
 
 export const layouts = [LayoutDashboardComponent, LayoutAuthComponent, LayoutErrorComponent];
 

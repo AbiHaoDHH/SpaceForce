@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 
 @Component({
     selector: 'sb-dashboard-head',
@@ -10,6 +10,9 @@ export class DashboardHeadComponent implements OnInit {
     @Input() title!: string;
     @Input() hideBreadcrumbs = false;
 
-    constructor() {}
-    ngOnInit() {}
+    constructor() {
+    }
+
+    ngOnInit() {
+    }
 }

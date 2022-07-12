@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { NavigationGuard } from './navigation.guard';
+import {NavigationGuard} from './navigation.guard';
 
 describe('Navigation Guards', () => {
     let navigationGuard: NavigationGuard;

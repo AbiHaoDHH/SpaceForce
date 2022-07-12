@@ -1,15 +1,7 @@
-import {
-    ChangeDetectionStrategy,
-    ChangeDetectorRef,
-    Component,
-    HostBinding,
-    Input,
-    OnDestroy,
-    OnInit,
-} from '@angular/core';
-import { sideNavItems, sideNavSections } from '@modules/navigation/data';
-import { NavigationService } from '@modules/navigation/services';
-import { Subscription } from 'rxjs';
+import {ChangeDetectionStrategy, ChangeDetectorRef, Component, HostBinding, Input, OnDestroy, OnInit,} from '@angular/core';
+import {sideNavItems, sideNavSections} from '@modules/navigation/data';
+import {NavigationService} from '@modules/navigation/services';
+import {Subscription} from 'rxjs';
 
 @Component({
     selector: 'sb-layout-dashboard',
@@ -29,7 +21,9 @@ export class LayoutDashboardComponent implements OnInit, OnDestroy {
     constructor(
         public navigationService: NavigationService,
         private changeDetectorRef: ChangeDetectorRef
-    ) {}
+    ) {
+    }
+
     ngOnInit() {
         if (this.light) {
             this.sidenavStyle = 'sb-sidenav-light';
@@ -41,6 +35,7 @@ export class LayoutDashboardComponent implements OnInit, OnDestroy {
             })
         );
     }
+
     ngOnDestroy() {
         this.subscription.unsubscribe();
     }

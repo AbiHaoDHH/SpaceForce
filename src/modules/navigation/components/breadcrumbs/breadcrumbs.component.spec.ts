@@ -1,10 +1,10 @@
-import { Component, DebugElement, NO_ERRORS_SCHEMA } from '@angular/core';
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { NavigationService } from '@modules/navigation/services';
-import { NavigationServiceStub } from '@testing/stubs';
+import {Component, DebugElement, NO_ERRORS_SCHEMA} from '@angular/core';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import {NavigationService} from '@modules/navigation/services';
+import {NavigationServiceStub} from '@testing/stubs';
 
-import { BreadcrumbsComponent } from './breadcrumbs.component';
+import {BreadcrumbsComponent} from './breadcrumbs.component';
 
 @Component({
     template: `
@@ -35,7 +35,7 @@ describe('BreadcrumbsComponent', () => {
         TestBed.configureTestingModule({
             declarations: [TestHostComponent, BreadcrumbsComponent],
             imports: [NoopAnimationsModule],
-            providers: [{ provide: NavigationService, useValue: NavigationServiceStub }],
+            providers: [{provide: NavigationService, useValue: NavigationServiceStub}],
             schemas: [NO_ERRORS_SCHEMA],
         }).compileComponents();
 

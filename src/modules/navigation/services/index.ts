@@ -1,5 +1,5 @@
-import { NavigationService } from './navigation.service';
-import { SideNavService } from './side-nav.service';
+import {NavigationService} from './navigation.service';
+import {SideNavService} from './side-nav.service';
 
 export const services = [NavigationService, SideNavService];
 

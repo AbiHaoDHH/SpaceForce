@@ -1,4 +1,4 @@
-import { ErrorGuard } from './error.guard';
+import {ErrorGuard} from './error.guard';
 
 export const guards = [ErrorGuard];
 

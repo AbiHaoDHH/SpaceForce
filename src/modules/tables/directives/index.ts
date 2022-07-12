@@ -1,4 +1,4 @@
-import { SBSortableHeaderDirective } from './sortable.directive';
+import {SBSortableHeaderDirective} from './sortable.directive';
 
 export const directives = [SBSortableHeaderDirective];
 

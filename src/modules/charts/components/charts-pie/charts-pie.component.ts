@@ -1,12 +1,5 @@
-import {
-    AfterViewInit,
-    ChangeDetectionStrategy,
-    Component,
-    ElementRef,
-    OnInit,
-    ViewChild,
-} from '@angular/core';
-import { Chart } from 'chart.js';
+import {AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, OnInit, ViewChild,} from '@angular/core';
+import {Chart} from 'chart.js';
 
 @Component({
     selector: 'sb-charts-pie',
@@ -18,8 +11,11 @@ export class ChartsPieComponent implements OnInit, AfterViewInit {
     @ViewChild('myPieChart') myPieChart!: ElementRef<HTMLCanvasElement>;
     chart!: Chart;
 
-    constructor() {}
-    ngOnInit() {}
+    constructor() {
+    }
+
+    ngOnInit() {
+    }
 
     ngAfterViewInit() {
         this.chart = new Chart(this.myPieChart.nativeElement, {

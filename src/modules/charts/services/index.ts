@@ -1,4 +1,4 @@
-import { ChartsService } from './charts.service';
+import {ChartsService} from './charts.service';
 
 export const services = [ChartsService];
 

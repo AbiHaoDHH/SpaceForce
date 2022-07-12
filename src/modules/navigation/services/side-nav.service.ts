@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import {Injectable} from '@angular/core';
+import {Subject} from 'rxjs';
 
 const _expand$ = new Subject<string[]>();
 
@@ -9,7 +9,8 @@ const expandedTable: {
 
 @Injectable()
 export class SideNavService {
-    constructor() {}
+    constructor() {
+    }
 
     get expand$() {
         return _expand$;

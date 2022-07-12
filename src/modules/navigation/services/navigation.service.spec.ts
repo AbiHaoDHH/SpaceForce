@@ -1,8 +1,8 @@
-import { TestBed } from '@angular/core/testing';
-import { ActivatedRoute, Router } from '@angular/router';
-import { ActivatedRouteStub, RouterStub } from '@testing/stubs';
+import {TestBed} from '@angular/core/testing';
+import {ActivatedRoute, Router} from '@angular/router';
+import {ActivatedRouteStub, RouterStub} from '@testing/stubs';
 
-import { NavigationService } from './navigation.service';
+import {NavigationService} from './navigation.service';
 
 describe('NavigationService', () => {
     let navigationService: NavigationService;
@@ -11,8 +11,8 @@ describe('NavigationService', () => {
         TestBed.configureTestingModule({
             providers: [
                 NavigationService,
-                { provide: ActivatedRoute, useValue: ActivatedRouteStub },
-                { provide: Router, useValue: new RouterStub() },
+                {provide: ActivatedRoute, useValue: ActivatedRouteStub},
+                {provide: Router, useValue: new RouterStub()},
             ],
         });
         navigationService = TestBed.inject(NavigationService);
